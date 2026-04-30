@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 using namespace std;
-vector<int> bfsgraphtraversal(vector<vector<int>> &adj)
+vector<int> bfsgraphtraversal(vector<vector<int>> &adj) 
 {
     vector<int> res;
     vector<int> visited(adj.size(),0);

@@ -73,7 +73,7 @@ TreeNode* deleteNode(TreeNode *&root, int data)
         else
         {
             TreeNode* temp = root->right;
-            while (temp->left != nullptr) temp = temp->left;
+            while (temp->left != nullptr) temp = temp->left; 
             root->data = temp->data;
             deleteNode(root->right, temp->data);
         }

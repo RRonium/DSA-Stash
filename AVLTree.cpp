@@ -48,7 +48,7 @@ Node *leftRotate(Node *x)
 
     return y; 
 } 
-int getBalance(Node *N) 
+int getBalance(Node *N)  
 { 
     if (N == nullptr) 
         return 0; 
@@ -58,7 +58,7 @@ Node* insert(Node* node, int key)
 { 
     if (node == nullptr) 
         return new Node(key);   
-    if (key < node->key) 
+    if (key < node->key)  
         node->left = insert(node->left, key); 
     else if (key > node->key) 
         node->right = insert(node->right, key); 
@@ -84,7 +84,6 @@ Node* insert(Node* node, int key)
     } 
     return node; 
 } 
-
 Node* deleteNode(Node* root, int key) 
 {
     if (root == nullptr) return root;
@@ -98,13 +97,13 @@ Node* deleteNode(Node* root, int key)
         {
             Node *temp = root->left ? root->left : root->right;
 
-            if (temp == nullptr) 
+            if(temp == nullptr) 
             {
                 temp = root;
                 root = nullptr;
             } 
             else
-                *root = *temp; 
+                *root = *temp;  
             delete temp;
         } 
         else 

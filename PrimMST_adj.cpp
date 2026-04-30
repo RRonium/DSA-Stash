@@ -24,7 +24,7 @@ vector<int> primMST(vector<vector<pair<int,int>>> &adj, int origin)
         int u=findMinVertex(key,mstSet,V);
         if(u==-1)   break;
         mstSet[u]=true;
-        for(auto e:adj[i])
+        for(auto e:adj[u])
         {
             int v=e.first;
             int wt=e.second;

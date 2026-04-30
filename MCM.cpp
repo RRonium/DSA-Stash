@@ -14,7 +14,7 @@ int MinMulReq(vector<int> &arr, int i, int j)
     }
     return res;
 }
-int matrixMultiplicationDP(vector<int> &arr)
+int matrixMultiplicationDP(vector<int> &arr) 
 {
     int n = arr.size();
     vector<vector<int>> dp(n, vector<int>(n, 0));

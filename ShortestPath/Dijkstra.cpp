@@ -6,7 +6,7 @@ int findMinVertex(vector<int>& dist,vector<int>& visited,int V)
 {
     int minVar=-1; 
     for(int i=0;i<V;i++)
-        if(!visited[i] && (minVar==-1 || dist[i] < dist[minVar]))
+        if(!visited[i] && (minVar==-1 || dist[i] < dist[minVar])) 
             minVar=i;
     return minVar;
 }
