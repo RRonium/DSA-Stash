@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int findMinVertex(vector<int> &key, vector<bool> &mstSet, int V)
+int findMinVertex(vector<int> &key, vector<bool> &mstSet, int V) 
 {
     int min=1e9,min_index=-1;
     for(int i=0;i<V;i++)

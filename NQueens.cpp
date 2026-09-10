@@ -26,7 +26,7 @@ void placeQueens(int row, vector<vector<int>>& mat, vector<vector<int>>& result)
     if (row == n) 
     {
         vector<int> ans;
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)     
             for (int j = 0; j < n; j++) 
                 if (mat[i][j]) 
                     ans.push_back(j + 1);

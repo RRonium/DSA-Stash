@@ -7,7 +7,7 @@ class BinaryHeap
     int size;           //the no. of elements placed in the heap
     int* arr;           //It's an array for storing all the keys
     BinaryHeap(int cap)
-    {    
+    {     
         capacity=cap;
         size=0;
         arr =new int[capacity];  
@@ -62,7 +62,7 @@ class BinaryHeap
     int ExtractMin()
     {
         if(size<=0)
-            return 1e9;
+            return 1e9;   
         if(size==1)
         {
             size--;
